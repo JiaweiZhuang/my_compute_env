@@ -1,0 +1,33 @@
+# color setting
+export CLICOLOR=1
+export LSCOLORS=ExFxBxDxCxegedabagacad
+
+# hide user name
+export PS1="\W \$"
+
+# auto ls after cd
+alias cd=cdls
+
+function cdls() {
+
+command cd $@
+
+nfiles=$(ls -1 | wc -l) # how many files
+if [ $nfiles -lt 60 ] # list all files if not too many
+then
+  ls
+else
+  ls | head -n 4
+  echo $nfiles ' files in total, only list a few'
+fi
+}
+
+# search Fortran subroutine
+function fsub() {
+echo search for subroutine $1 in current dir
+grep -ir "subroutine $1" ./
+}
+
+function ffun() {
+echo search for function $1 in current dir
+grep -ir "function $1" ./
