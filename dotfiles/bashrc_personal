@@ -31,3 +31,4 @@ grep -ir "subroutine $1" ./
 function ffun() {
 echo search for function $1 in current dir
 grep -ir "function $1" ./
+}
