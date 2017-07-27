@@ -1,0 +1,6 @@
+name: matlab_jupyter
+dependencies:
+    - python=3.5    # Matlab kernel only works with python3.5 
+    - jupyter       # Jupyter notebooks
+    - pip:
+        - matlab_kernel # Jupyter matlab kernel
