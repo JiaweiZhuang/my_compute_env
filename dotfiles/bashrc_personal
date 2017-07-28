@@ -1,9 +1,29 @@
+# ============================== 
+# basic terminal appearance 
+# ============================== 
+
 # color setting
+# this only works on Mac. for Linux simply use "ls --color=auto"
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 
 # hide user name
 export PS1="\W \$"
+
+# ============================== 
+# basic alias 
+# ============================== 
+alias ll='ls -l'
+alias lt='ls -lt'
+alias la='ls -al'
+
+# ============================== 
+# shortcut functions 
+# ============================== 
+
+# control python virtual env
+alias act='source activate'
+alias deact='source deactivate'
 
 # auto ls after cd
 alias cd=cdls
@@ -31,3 +51,4 @@ grep -ir "subroutine $1" ./
 function ffun() {
 echo search for function $1 in current dir
 grep -ir "function $1" ./
+}

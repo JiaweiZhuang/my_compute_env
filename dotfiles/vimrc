@@ -1,4 +1,7 @@
 syntax on
+
+set background=light "this is only for Mac with light colorscheme
+
 set expandtab "Insert spaces instead of <TAB> character when the <TAB> key is pressed.       
 set textwidth=120    
 set tabstop=4    
