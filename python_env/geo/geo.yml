@@ -25,3 +25,5 @@ dependencies:
     - pip:
         # These are additional libraries to search for on PyPI
         - xbpch    # Interface for bpch output files
+        - h5pyd         # HDF5 for Amazon S3
+        - h5netcdf      # allow HDF5-backend for xarray
