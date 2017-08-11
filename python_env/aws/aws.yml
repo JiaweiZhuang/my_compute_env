@@ -1,0 +1,8 @@
+name: aws 
+dependencies:
+    - python=3.6
+    - ipython
+    - jupyter
+    - pip:
+        - awscli
+        - boto3
