@@ -8,6 +8,7 @@ dependencies:
     - cartopy       # Geographic plotting toolkit
     - cython        # Transpile Python->C
     - dask          # Parallel processing library
+    - graphviz      # visualize dask graph (binary)
     - future        # Python 2/3 compatibility
     - h5py          # Wrapper for HDF5
     - ipython       # IPython interpreter and tools
@@ -22,8 +23,10 @@ dependencies:
     - seaborn       # Statistical visualizations
     - six           # Python 2/3 compatibility
     - xarray        # N-d labeled array library
+    - sphinx        # documentation
     - pip:
         # These are additional libraries to search for on PyPI
         - xbpch    # Interface for bpch output files
         - h5pyd         # HDF5 for Amazon S3
         - h5netcdf      # allow HDF5-backend for xarray
+        - graphviz      # visualize dask graph (python package)
